@@ -16,3 +16,13 @@ public class ValidateD1RegExStyle {
 	}
 
 }
+////+1-9123456780
+//"\\+1-[0-9]{10}"   the back slashes are "escape sequence" has something to do with metacharacters
+
+/*
+*validate all the ids you have
+*-ssn
+*-dlno
+*-area pin code
+*-car license plate
+*/
