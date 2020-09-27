@@ -13,7 +13,7 @@ public class ProductPrinter {
 				for (int j = 0; j < middlenames.length; j++) {
 					for (int j2 = 0; j2 < lastnames.length; j2++) {
 						System.out.print(firstnames[i]+" "+middlenames[j]+" "+lastnames[j2]+"\n"); //discovered syso print doesn't change line, forced it with \n
-						System.out.println(firstnames[i]+" "+middlenames[j]+" "+lastnames[j2]);
+						System.out.println(firstnames[i]+" "+middlenames[j]+" "+lastnames[j2]+"\n");//this one prints with \n added and then an additional line b/c println
 					}
 					
 				}
