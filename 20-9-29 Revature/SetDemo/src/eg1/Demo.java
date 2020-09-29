@@ -33,8 +33,8 @@ public class Demo {
 		lhs.add("mySql");
 		System.out.println(lhs);
 		
-		//Set<String> ts=new TreeSet<>();
-		Set<String> ts=new TreeSet<>(Collections.reverseOrder());
+		Set<String> ts=new TreeSet<>();//ascending alphabetical
+		//Set<String> ts=new TreeSet<>(Collections.reverseOrder());//descending alphabetical
 		ts.add("heyy");
 		ts.add("java");
 		ts.add(";aas;dklfj");
@@ -44,6 +44,7 @@ public class Demo {
 		ts.add("java");
 		ts.add("mySql");
 		System.out.println(ts);//alphabetical order by default
+		System.out.println();
 	}
-
+//assignment addAll, retainAll, removeAll..
 }
