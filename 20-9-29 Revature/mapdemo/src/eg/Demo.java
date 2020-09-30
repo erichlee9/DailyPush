@@ -2,6 +2,7 @@ package eg;
 
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -35,7 +36,12 @@ public class Demo {
 		trhash.put(200, "hello2");
 		trhash.put(120, "middle1");
 		trhash.put(99, "middle2");
+		System.out.println("----------------Tree Map------------------------");
 		System.out.println(trhash);
+		for(Entry<Integer, String>t:trhash.entrySet()) {
+			System.out.println(t.getKey()+" "+t.getValue());
+		}
+		System.out.println("----------------Tree Map------------------------");
 		
 		
 		Map<Integer, String> hasht=new Hashtable<>();//can't have null, throws null pointer exception
@@ -45,7 +51,13 @@ public class Demo {
 		hasht.put(120, "middle1");
 		//hasht.put(null, "null");
 		hasht.put(99, "middle2");
+		System.out.println("----------------hash table------------------------");
 		System.out.println(hasht);
+		for (Entry<Integer, String> entry:hasht.entrySet()) {
+			System.out.println(entry.getKey()+" "+entry.getValue());
+			
+		}
+		System.out.println("----------------hash table------------------------");
 		
 		
 		System.out.println(hasht.size());
