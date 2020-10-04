@@ -1,8 +1,8 @@
-package models;
+package bank_API_maven1_app.accounttypemodel;
 //used to track what type of account is being created
 /*type possibilites:
- * checking, savings
- */
+* checking, savings
+*/
 public class AccountType {
 	private int typeId;
 	private String type;
@@ -30,6 +30,12 @@ public String getType() {
 
 public void setType(String type) {
 	this.type = type;
+}
+
+
+@Override
+public String toString() {
+	return "AccountType [typeId=" + typeId + ", type=" + type + "]";
 }
 
 

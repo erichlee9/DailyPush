@@ -1,4 +1,4 @@
-package models;
+package bank_API_maven1_app.rolemodel;
 
 public class Role {
 	private int roleId;
@@ -22,6 +22,11 @@ public String getRole() {
 
 public void setRole(String role) {
 	this.role = role;
+}
+
+@Override
+public String toString() {
+	return "Role [roleId=" + roleId + ", role=" + role + "]";
 }
 
 

@@ -1,4 +1,4 @@
-package models;
+package bank_API_maven1_app.accountmodel;
 //used to represent a single account for a user
 public class Account {
 	private int accountId;
@@ -26,8 +26,14 @@ public void setBalance(double balance) {
 	this.balance = balance;
 }
 
+@Override
+public String toString() {
+	return "Account [accountId=" + accountId + ", balance=" + balance + "]";
+}
+
 
 
 
 
 }
+
